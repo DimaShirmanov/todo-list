@@ -1,0 +1,12 @@
+.clock {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &_font {
+    font-weight: 700;
+  }
+
+  &__time {
+    margin-left: 20px;
+  }
+}

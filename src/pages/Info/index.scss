@@ -1,0 +1,19 @@
+.info {
+  &__title {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 50px;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+    &.version {
+      font-size: 16px;
+    }
+  }
+}

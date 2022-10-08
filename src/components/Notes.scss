@@ -1,0 +1,53 @@
+.notelist {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 50px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 16px;
+    background-color: #fff;
+    height: 50px;
+    width: 1000px;
+    border-radius: 5px;
+    padding: 0 15px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &__datetitle {
+    font-size: 13px;
+    color: #808080;
+    margin-right: 20px;
+  }
+
+  &__button {
+    font-size: 26px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #b8860b;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+
+    &:hover {
+      background-color: #b22222;
+      transition: 0.4s linear;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+    }
+  }
+}

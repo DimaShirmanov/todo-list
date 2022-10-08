@@ -1,0 +1,17 @@
+.navbar {
+  &__home:hover {
+    color: #b8860b;
+  }
+
+  &__notepad:hover {
+    color: #b8860b;
+  }
+
+  &__info:hover {
+    color: #b8860b;
+  }
+}
+
+.navbar:not(:last-child) {
+  margin-right: 30px;
+}
