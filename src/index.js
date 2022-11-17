@@ -11,9 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const options = {
   position: positions.TOP_CENTER,
-  timeout: 5000,
+  timeout: 3000,
   offset: "30px",
   transition: transitions.SCALE,
+  width: "500px"
 };
 
 root.render(

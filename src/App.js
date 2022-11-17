@@ -1,4 +1,4 @@
-import LayoutComponent from './components/LayoutComponent';
+import LayoutComponent from './components/LayoutComponent/LayoutComponent';
 import { Routes, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Notepad from './pages/Notepad';

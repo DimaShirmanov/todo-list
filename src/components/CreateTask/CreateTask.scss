@@ -1,0 +1,57 @@
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  
+    &__title {
+      height: 50px;
+      width: 800px;
+      padding: 0 15px;
+      font-size: 16px;
+      border-radius: 5px;
+  
+      &:focus {
+        outline: 2px solid#b8860b;
+      }
+    }
+  
+    &__description {
+      height: 50px;
+      width: 800px;
+      padding: 0 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+  
+      &:focus {
+        outline: 2px solid#b8860b;
+      }
+    }
+  
+    &__add-file {
+      width: 800px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 20px;
+    }
+  
+    &__add-note {
+      width: 800px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: #b8860b;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      margin-top: 20px;
+  
+      &:hover {
+        transition: 0.2s linear;
+        background-color: #dda20d;
+      }
+    }
+  }

@@ -1,17 +1,21 @@
-import React from "react";
-import Form from "../../components/Form";
+import React, {useState} from "react";
 import Notes from "../../components/Notes";
+import CreateTask from "../../components/CreateTask/CreateTask";
 
 import "./index.scss";
 
 const HomePage = () => {
-  const notes = new Array(3)
-    .fill("")
-    .map((_, i) => ({ id: i, title: `Note ${i + 1}` }));
+  const [buttonClick, setButtonClick] = useState(false);
+  const [todos, setTodos] = useState([]);
+
   return (
     <div className="home">
-      <Form />
-      <Notes notes={notes} />
+      { buttonClick === true ? <CreateTask todos={todos} setTodos={setTodos} setButtonClick={setButtonClick} /> :
+      <div className="create-task">
+      <button className="create-task__button" onClick={() => setButtonClick(true)}>+ Добавить задачу</button>
+      <Notes todos={todos} setTodos={setTodos} />
+      </div>
+}
     </div>
   );
 };

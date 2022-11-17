@@ -1,6 +1,22 @@
 .notepad {
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  font-weight: 700;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &__title {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+
+  &__textarea {
+    width: 1000px;
+    height: 400px;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+    font-size: 14px;
+  }
 }

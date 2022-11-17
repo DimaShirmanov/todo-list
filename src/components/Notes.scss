@@ -4,50 +4,118 @@
   align-items: center;
   padding-top: 50px;
 
-  &__title {
+  .note {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #000;
+    color: #fff;
     font-size: 16px;
-    background-color: #fff;
     height: 50px;
-    width: 1000px;
+    width: 800px;
     border-radius: 5px;
     padding: 0 15px;
+
+    &:hover {
+      background-color: #b8860b;
+      transition: 0.3s linear;
+    }
 
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-  }
 
-  &__date {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
+    .left {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+      justify-content: flex-start;
 
-  &__datetitle {
-    font-size: 13px;
-    color: #808080;
-    margin-right: 20px;
-  }
+      &__checkbox:checked+div>span {
+        text-decoration: line-through;
+      }
 
-  &__button {
-    font-size: 26px;
-    height: 40px;
-    width: 40px;
-    border: 1px solid #b8860b;
-    background-color: #fff;
-    border-radius: 5px;
-    color: #000;
+      &__title {
+        padding-left: 10px;
+      }
 
-    &:hover {
-      background-color: #b22222;
-      transition: 0.4s linear;
-      cursor: pointer;
-      border: none;
-      color: #fff;
+      &__description {
+        padding: 0 40px 0 10px;
+      }
+
+      &__edit {
+        outline: none;
+        background: none;
+        margin-left: 10px;
+        width: 600px;
+      }
+
+      &__save-button,
+      &__cancel-button {
+        font-size: 26px;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #000;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background-color: #b22222;
+          transition: 0.3s linear;
+          cursor: pointer;
+          border: none;
+          color: #fff;
+        }
+      }
+
+      &__save-button:hover {
+        background-color: #099131;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__date-title {
+        font-size: 14px;
+        color: #fff;
+        margin-right: 20px;
+      }
+
+      &__delete-button,
+      &__edit-button {
+        font-size: 26px;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #000;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          background-color: #b22222;
+          transition: 0.3s linear;
+          cursor: pointer;
+          border: none;
+          color: #fff;
+        }
+      }
+
+      &__edit-button:hover {
+        background-color: #0b15a5;
+      }
     }
   }
 }
+
+
+
