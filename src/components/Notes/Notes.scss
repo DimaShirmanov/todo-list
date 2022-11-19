@@ -34,12 +34,9 @@
         text-decoration: line-through;
       }
 
-      &__title {
-        padding-left: 10px;
-      }
-
-      &__description {
-        padding: 0 40px 0 10px;
+      &__title, &__description {
+        padding-left: 20px;
+        margin-top: -3px;
       }
 
       &__edit {
@@ -89,7 +86,7 @@
       }
 
       &__delete-button,
-      &__edit-button {
+      &__view-button {
         font-size: 26px;
         height: 40px;
         width: 40px;
@@ -99,6 +96,7 @@
 
         &:not(:last-child) {
           margin-right: 10px;
+          font-size: 18px;
         }
 
         &:hover {
@@ -110,7 +108,7 @@
         }
       }
 
-      &__edit-button:hover {
+      &__view-button:hover {
         background-color: #0b15a5;
       }
     }

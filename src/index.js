@@ -14,7 +14,6 @@ const options = {
   timeout: 3000,
   offset: "30px",
   transition: transitions.SCALE,
-  width: "500px"
 };
 
 root.render(

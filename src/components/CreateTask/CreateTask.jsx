@@ -3,7 +3,7 @@ import { useAlert } from "react-alert";
 
 import "./CreateTask.scss";
 
-const CreateTask = ({ todos, setTodos, setButtonClick }) => {
+const CreateTask = ({ todos, setTodos, handleButtonCreateTaskClick }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const alert = useAlert();
@@ -27,7 +27,7 @@ const CreateTask = ({ todos, setTodos, setButtonClick }) => {
       ]);
       setTitle("");
       setDescription("");
-      setButtonClick(false);
+      handleButtonCreateTaskClick();
     }
   };
 
@@ -56,6 +56,12 @@ const CreateTask = ({ todos, setTodos, setButtonClick }) => {
         />
         <button className="form__add-note" onClick={addTodos}>
           Добавить заметку
+        </button>
+        <button
+          className="form__add-note"
+          onClick={handleButtonCreateTaskClick}
+        >
+          Отмена
         </button>
       </div>
     </div>
